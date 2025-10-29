@@ -1,0 +1,41 @@
+/* Custom styles to better match desktop/mobile mockups */
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --hero-bg: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.hero {
+  background: var(--hero-bg);
+  border-radius: 0.75rem;
+}
+
+.hero .display-5 {
+  letter-spacing: -0.02em;
+}
+
+/* Make card images consistent */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card .card-footer {
+  padding-top: 0;
+}
+
+/* Footer text slightly smaller */
+footer {
+  font-size: 0.95rem;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-inline: 3rem;
+  }
+}
+
+
